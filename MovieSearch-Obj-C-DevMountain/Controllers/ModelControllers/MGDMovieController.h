@@ -6,10 +6,14 @@
 //  Copyright © 2018 Leme Group. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "MGDMovie.h"
 
 @interface MGDMovieController : NSObject
+
+#pragma shared instance
+
++(instancetype)sharedInstance;
 
 #pragma GET movies via search term
 
@@ -18,6 +22,6 @@
 
 #pragma GET movie poster image based on path
 
-+(void) fetchMoviePosterImageWithPath:(NSString *)imagePath completion:(void(^)(UIImage *moviePoster, NSError *error))completion
++(void) fetchMoviePosterImageWithPath:(NSString *)imagePath completion:(void(^)(UIImage *moviePoster, NSError *error))completion;
 
 @end

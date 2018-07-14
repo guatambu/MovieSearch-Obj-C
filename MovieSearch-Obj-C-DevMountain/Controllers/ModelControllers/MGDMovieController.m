@@ -31,9 +31,22 @@ static NSString *includeAdultValue = @"false";
 
 static NSString *imageBaseURLAsString = @"http://image.tmdb.org/t/p/w500/";
 
-#pragma implementation
+
 
 @implementation MGDMovieController
+
+#pragma shared Instance
+
++(instancetype)sharedInstance
+{
+    static MGDMovieController *sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [MGDMovieController new];
+    });
+    return sharedInstance;
+}
+
 
 #pragma search term URL builder function
 
@@ -75,7 +88,7 @@ static NSString *imageBaseURLAsString = @"http://image.tmdb.org/t/p/w500/";
 
 #pragma GET movie object from TMDB API
 
-+(void)fetchMoviesWithSearchTerm:(NSString *)searchTerm completion:(void (^)(NSArray *, NSError *))completion
++(void)fetchMoviesWithSearchTerm:(NSString *)searchTerm completion:(void (^)(NSArray<MGDMovie *> *, NSError *))completion
 {
     NSURL *searchURL = [MGDMovieController buildURLWithSearchTerm:searchTerm];
     

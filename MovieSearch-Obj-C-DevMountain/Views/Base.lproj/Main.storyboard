@@ -13,7 +13,7 @@
         <!--Root View Controller-->
         <scene sceneID="e7z-qG-YLx">
             <objects>
-                <tableViewController id="htV-IM-dMM" sceneMemberID="viewController">
+                <tableViewController id="htV-IM-dMM" customClass="MovieSearchTableViewController" customModule="MovieSearch_Obj_C_DevMountain" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="UWm-1X-Jf2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="XnR-wO-KyQ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="120" id="XnR-wO-KyQ" customClass="MovieTableViewCell" customModule="MovieSearch_Obj_C_DevMountain" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XnR-wO-KyQ" id="dUD-2v-x1t">
@@ -80,6 +80,12 @@
                                         <constraint firstItem="EDd-Uv-2Ih" firstAttribute="top" secondItem="dUD-2v-x1t" secondAttribute="top" id="vYe-F9-WfV"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="movieDescriptionLabel" destination="n5s-kK-dbb" id="m1x-Qo-V3n"/>
+                                    <outlet property="moviePosterImageView" destination="EDd-Uv-2Ih" id="FWG-Go-kqk"/>
+                                    <outlet property="ratingLabel" destination="tr2-CX-X43" id="ZJD-BU-c9o"/>
+                                    <outlet property="titleLabel" destination="JSa-Uy-el2" id="hlf-4W-daI"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -88,6 +94,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="qoP-Zs-sSy"/>
+                    <connections>
+                        <outlet property="searchBarOutlet" destination="EIi-FE-pxr" id="JOK-0p-Pw3"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZIh-UF-MZI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
