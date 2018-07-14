@@ -14,6 +14,7 @@
 		FA8B232A20FA7B9200020676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8B232820FA7B9200020676 /* LaunchScreen.storyboard */; };
 		FA8B232D20FA7B9200020676 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B232C20FA7B9200020676 /* main.m */; };
 		FA8B233720FA7B9200020676 /* MovieSearch_Obj_C_DevMountainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B233620FA7B9200020676 /* MovieSearch_Obj_C_DevMountainTests.m */; };
+		FA8B234920FA7D4000020676 /* MGDMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B234820FA7D4000020676 /* MGDMovie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		FA8B233220FA7B9200020676 /* MovieSearch-Obj-C-DevMountainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MovieSearch-Obj-C-DevMountainTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8B233620FA7B9200020676 /* MovieSearch_Obj_C_DevMountainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieSearch_Obj_C_DevMountainTests.m; sourceTree = "<group>"; };
 		FA8B233820FA7B9200020676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA8B234720FA7D4000020676 /* MGDMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGDMovie.h; sourceTree = "<group>"; };
+		FA8B234820FA7D4000020676 /* MGDMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGDMovie.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,15 +84,10 @@
 		FA8B231C20FA7B9200020676 /* MovieSearch-Obj-C-DevMountain */ = {
 			isa = PBXGroup;
 			children = (
-				FA8B231D20FA7B9200020676 /* AppDelegate.h */,
-				FA8B231E20FA7B9200020676 /* AppDelegate.m */,
-				FA8B232020FA7B9200020676 /* ViewController.h */,
-				FA8B232120FA7B9200020676 /* ViewController.m */,
-				FA8B232320FA7B9200020676 /* Main.storyboard */,
-				FA8B232620FA7B9200020676 /* Assets.xcassets */,
-				FA8B232820FA7B9200020676 /* LaunchScreen.storyboard */,
-				FA8B232B20FA7B9200020676 /* Info.plist */,
-				FA8B232C20FA7B9200020676 /* main.m */,
+				FA8B234120FA7CB400020676 /* App Resources */,
+				FA8B234620FA7D0D00020676 /* Models */,
+				FA8B234220FA7CC600020676 /* Views */,
+				FA8B234320FA7CDB00020676 /* Controllers */,
 			);
 			path = "MovieSearch-Obj-C-DevMountain";
 			sourceTree = "<group>";
@@ -101,6 +99,61 @@
 				FA8B233820FA7B9200020676 /* Info.plist */,
 			);
 			path = "MovieSearch-Obj-C-DevMountainTests";
+			sourceTree = "<group>";
+		};
+		FA8B234120FA7CB400020676 /* App Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA8B231D20FA7B9200020676 /* AppDelegate.h */,
+				FA8B231E20FA7B9200020676 /* AppDelegate.m */,
+				FA8B232620FA7B9200020676 /* Assets.xcassets */,
+				FA8B232B20FA7B9200020676 /* Info.plist */,
+				FA8B232C20FA7B9200020676 /* main.m */,
+			);
+			path = "App Resources";
+			sourceTree = "<group>";
+		};
+		FA8B234220FA7CC600020676 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA8B232320FA7B9200020676 /* Main.storyboard */,
+				FA8B232820FA7B9200020676 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA8B234320FA7CDB00020676 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA8B234520FA7CFA00020676 /* ModelControllers */,
+				FA8B234420FA7CE900020676 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FA8B234420FA7CE900020676 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA8B232020FA7B9200020676 /* ViewController.h */,
+				FA8B232120FA7B9200020676 /* ViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FA8B234520FA7CFA00020676 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		FA8B234620FA7D0D00020676 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA8B234720FA7D4000020676 /* MGDMovie.h */,
+				FA8B234820FA7D4000020676 /* MGDMovie.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA8B232220FA7B9200020676 /* ViewController.m in Sources */,
+				FA8B234920FA7D4000020676 /* MGDMovie.m in Sources */,
 				FA8B232D20FA7B9200020676 /* main.m in Sources */,
 				FA8B231F20FA7B9200020676 /* AppDelegate.m in Sources */,
 			);
@@ -359,7 +413,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q2Z9B2AZ4W;
-				INFOPLIST_FILE = "MovieSearch-Obj-C-DevMountain/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MovieSearch-Obj-C-DevMountain/App Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LemeGroup.MovieSearch-Obj-C-DevMountain";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -373,7 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q2Z9B2AZ4W;
-				INFOPLIST_FILE = "MovieSearch-Obj-C-DevMountain/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MovieSearch-Obj-C-DevMountain/App Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.LemeGroup.MovieSearch-Obj-C-DevMountain";
 				PRODUCT_NAME = "$(TARGET_NAME)";
