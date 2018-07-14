@@ -13,8 +13,6 @@
 
 #pragma initializers
 
-// https://api.themoviedb.org/3/search/movie?api_key=9d2b65148c48ec092a601516a168a71b&language=en-US&query=star%20wars&page=1&include_adult=false
-
 // fundamental Movie object initializer
 -(instancetype)initWithTitle:(NSString *)title
                       rating:(NSNumber *)rating

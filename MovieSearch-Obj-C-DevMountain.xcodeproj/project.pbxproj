@@ -15,6 +15,7 @@
 		FA8B232D20FA7B9200020676 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B232C20FA7B9200020676 /* main.m */; };
 		FA8B233720FA7B9200020676 /* MovieSearch_Obj_C_DevMountainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B233620FA7B9200020676 /* MovieSearch_Obj_C_DevMountainTests.m */; };
 		FA8B234920FA7D4000020676 /* MGDMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B234820FA7D4000020676 /* MGDMovie.m */; };
+		FA8B234C20FA8C1800020676 /* MGDMovieController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B234B20FA8C1800020676 /* MGDMovieController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		FA8B233820FA7B9200020676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA8B234720FA7D4000020676 /* MGDMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGDMovie.h; sourceTree = "<group>"; };
 		FA8B234820FA7D4000020676 /* MGDMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGDMovie.m; sourceTree = "<group>"; };
+		FA8B234A20FA8C1800020676 /* MGDMovieController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGDMovieController.h; sourceTree = "<group>"; };
+		FA8B234B20FA8C1800020676 /* MGDMovieController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGDMovieController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,8 @@
 		FA8B234520FA7CFA00020676 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FA8B234A20FA8C1800020676 /* MGDMovieController.h */,
+				FA8B234B20FA8C1800020676 /* MGDMovieController.m */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				FA8B234920FA7D4000020676 /* MGDMovie.m in Sources */,
 				FA8B232D20FA7B9200020676 /* main.m in Sources */,
 				FA8B231F20FA7B9200020676 /* AppDelegate.m in Sources */,
+				FA8B234C20FA8C1800020676 /* MGDMovieController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
